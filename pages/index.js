@@ -1,9 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Main, CarouselSection } from '../components/layout/Layout.styled';
-import { CarouselItem } from '../components/carousel/Carousel.styled';
-import { Carousel } from '../components/carousel/Carousel';
-import { Navigation } from '../components/carousel/Navigation';
+import { Main, CarouselSection, InformationSection, Title } from '../components/layout';
+import { LocationList, LocationListItem } from '../components/location-information';
+import { FeatureList } from '../components/feature-list';
+import { CarouselItem, Carousel, Navigation } from '../components/carousel';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
@@ -30,6 +30,21 @@ export default function Home() {
       </Head>
 
       <Main>
+        <InformationSection>
+          <Title>Monsieur Didot</Title>
+          <FeatureList>
+            <li>4 people</li>
+            <li>2 bedrooms</li>
+            <li>2 bathrooms</li>
+            <li>Private Terrace</li>
+            <li>Peaceful</li>
+          </FeatureList>
+          <LocationList>
+            <LocationListItem>Notting Hill, London</LocationListItem>
+            <LocationListItem>Walk 6 mins (Westbourne Park Station)</LocationListItem>
+            <LocationListItem>Stairs</LocationListItem>
+          </LocationList>
+        </InformationSection>
         <CarouselSection>
           <Carousel width="95%">
               {data?.imageUrls?.map((image, index) => 

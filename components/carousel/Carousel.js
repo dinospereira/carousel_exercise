@@ -1,7 +1,5 @@
 import React from 'react';
-import { CarouselProvider } from '../../contexts/carousel/CarouselProvider';
-import { CarouselContainer, ArrowLeft, ArrowRight } from './Carousel.styled';
-import { Navigation } from './Navigation';
+import { CarouselContainer} from './Carousel.styled';
 import { SnapSlider } from './SnapSlider';
 
 export const Carousel = ({ children, width, ...rest }) => {

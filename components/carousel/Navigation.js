@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowRight, ArrowLeft, NavigationContainer, Indicator } from "./Navigation.styled";
-import CarouselContext from '../../contexts/carousel/CarouselContext';
+import { CarouselContext } from '../../contexts/carousel';
 import { ArrowIcon } from '../../icons/Arrow';
 
 export const Navigation = () => {

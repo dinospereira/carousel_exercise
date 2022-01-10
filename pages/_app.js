@@ -1,5 +1,5 @@
 import '../styles/globals.css'
-import { CarouselProvider } from '../contexts/carousel/CarouselProvider';
+import { CarouselProvider } from '../contexts/carousel';
 
 function MyApp({ Component, pageProps }) {
   return (

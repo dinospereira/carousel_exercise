@@ -3,10 +3,11 @@ import styled from "styled-components";
 export const Indicator = styled.div`
     display: grid;
     place-items: center;
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
     background: white;
-    border-radius: 3rem;
+    border-radius: 2rem;
+    font-size: 0.7rem;
 `;
 
 export const ArrowLeft = styled.button`
